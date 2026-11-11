@@ -30,7 +30,7 @@ openssl dgst -sha384 -binary public/styles.css | openssl base64 -A
 Convert stored `.dat` canvas files to PNG without running the server:
 
 ```bash
-python datToImageConverter.py /path/to/image.dat
+python dat2png.py /path/to/image.dat
 ```
 
 ## License

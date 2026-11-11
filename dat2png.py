@@ -1,4 +1,4 @@
-# This script allows you to convert raw .dat image files from VPA storage into PNG's. Run using python datToImageConverter.py /path/to/vpa/image.dat.
+# This script allows you to convert raw .dat image files from VPA storage into PNG's. Run using python dat2png.py /path/to/vpa/image.dat.
 from PIL import Image # pip install pillow
 import numpy as np # pip install numpy
 import argparse
@@ -36,7 +36,7 @@ def save_png_from_image_buffer(pixels, file_path):
     img.save(file_path[:-3] + 'png')
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="This script allows you to convert .dat image files from VPA storage into PNG's. Run using python datToImageConverter.py /path/to/vpa/image.dat.")
+    parser = argparse.ArgumentParser(description="This script allows you to convert .dat image files from VPA storage into PNG's. Run using python dat2png.py /path/to/vpa/image.dat.")
     parser.add_argument('file_path', type=str, help='/path/to/vpa/image.dat file')
     args = parser.parse_args()
     
